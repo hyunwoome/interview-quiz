@@ -1,0 +1,17 @@
+.innerFooter {
+	width: 800px;
+	height: 5vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.copyright {
+	font-size: 0.9rem;
+}
+
+.linkLogo img {
+	width: 1rem;
+	margin-left: 1rem;
+}

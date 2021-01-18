@@ -5,12 +5,14 @@ import HeaderStyle from './Header.module.css';
 
 function Header() {
 	return (
-		<div>
+		<>
 			<div className={HeaderStyle.header}>
-				<Logo />
-				<Menu />
+				<div className={HeaderStyle.innerHeader}>
+					<Logo />
+					<Menu />
+				</div>
 			</div>
-		</div>
+		</>
 	);
 }
 

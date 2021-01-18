@@ -1,0 +1,10 @@
+.dropdown {
+	width: 0.6rem;
+}
+
+.list {
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

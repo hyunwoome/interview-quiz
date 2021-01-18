@@ -1,0 +1,7 @@
+.header {
+	background-color: darkgray;
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}

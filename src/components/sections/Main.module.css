@@ -1,4 +1,41 @@
 .main {
-	height: 90vh;
-	background-color: lightblue;
+	background-color: #f2f2f2;
+}
+
+.innerMain {
+	max-width: 800px;
+	height: 86.5vh;
+	margin: auto;
+	padding: 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.questionText {
+	height: 45vh;
+	background-color: white;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.answerText {
+	height: 30vh;
+	background-color: white;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.utils {
+	height: 6vh;
+	background-color: white;
+	border-radius: 10px;
 }

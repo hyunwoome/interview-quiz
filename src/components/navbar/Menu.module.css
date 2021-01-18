@@ -1,3 +1,7 @@
+.menu {
+	position: relative;
+}
+
 .button {
 	border: none;
 	background-color: white;
@@ -13,13 +17,14 @@
 
 .list {
 	position: absolute;
-	top: 2rem;
-	left: 9.9rem;
 	list-style: none;
-	margin: 0;
-	padding: 0;
 	line-height: 1.5rem;
 	font-size: 0.8rem;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 1rem;
+	background-color: white;
+}
+
+.list:hover {
+	cursor: pointer;
 }

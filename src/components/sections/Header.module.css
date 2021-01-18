@@ -1,7 +1,8 @@
 .innerHeader {
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	display: flex;
 	align-items: center;
 	height: 5vh;
+	padding: 0 1rem;
 }

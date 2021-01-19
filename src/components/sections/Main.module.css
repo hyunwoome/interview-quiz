@@ -24,14 +24,30 @@
 }
 
 .answerText {
-	height: 30vh;
+	height: 28vh;
 	background-color: white;
 	margin-bottom: 1rem;
 	border-radius: 10px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
+	align-items: left;
+	font-size: 1.3rem;
+	padding: 1rem;
+	line-height: 2rem;
+}
+
+.reference {
+	font-size: 1rem;
+}
+
+.reference a {
+	text-decoration: none;
+	color: black;
+}
+
+.reference a:hover {
+	border-bottom: 2px solid #4173ca;
 }
 
 .utils {

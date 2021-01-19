@@ -4,19 +4,41 @@ import Dropdown from '../../assets/images/dropdown.png';
 
 function Menu() {
 	const [menu, setMenu] = useState(false);
+	const [select, setSelect] = useState('HTML');
+
+	const transferText = (e) => {
+		setSelect(e.target.innerText);
+		setMenu(!menu);
+	};
+
+	const toggleMenu = () => {
+		setMenu(!menu);
+	};
 
 	return (
 		<div className={MenuStyle.menu}>
-			<button className={MenuStyle.button} onClick={() => setMenu(!menu)}>
-				Menu{' '}
+			<button className={MenuStyle.button} onClick={toggleMenu}>
+				{select}{' '}
 				<img className={MenuStyle.dropdown} src={Dropdown} alt="dropdown" />
 			</button>
 			{menu ? (
-				<ul className={MenuStyle.list}>
-					<li className={MenuStyle.listItem}>HTML</li>
-					<li className={MenuStyle.listItem}>CSS</li>
-					<li className={MenuStyle.listItem}>JavaScript</li>
-				</ul>
+				<menu className={MenuStyle.list}>
+					<li className={MenuStyle.listItem}>
+						<button className={MenuStyle.button} onClick={transferText}>
+							HTML
+						</button>
+					</li>
+					<li className={MenuStyle.listItem}>
+						<button className={MenuStyle.button} onClick={transferText}>
+							CSS
+						</button>
+					</li>
+					<li className={MenuStyle.listItem}>
+						<button className={MenuStyle.button} onClick={transferText}>
+							JavaScript
+						</button>
+					</li>
+				</menu>
 			) : null}
 		</div>
 	);

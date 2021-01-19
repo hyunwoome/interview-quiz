@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1,
+		"question": "DOCTYPE은 무엇인가요?",
+		"answer": "doctype은 Document Type의 줄임말입니다. HTML은 버전별로 지원하는 태그의 사용이나 출력에서 미묘한 차이가 발생하기 때문에, 어떤 버전으로 작성되었는지 미리 선언을 하여 '웹브라우저가 내용을 올바르게 표시'할 수 있도록 해줍니다. 선언하지 않을 경우 브라우저가 임의로 지정하게 되어 원치 않은 결과가 발생 할 수도 있습니다.",
+		"reference": "https://www.next-t.co.kr/blog/seo-Technical14",
+		"check": true
+	},
+	{
+		"id": 2,
+		"question": "Semantic 요소는 무엇인가요?",
+		"answer": "시멘틱 요소는 브라우저와 개발자 모두에게 의미를 명확하게 전달합니다. 비 시멘틱 요소는 <div>, <span>같은 아무런 의미없는 태그를 말하고, 시멘틱 요소는 <form>, <table>, <article>같은 컨텐츠를 명백하게 설명할 수 있는 태그입니다. 또한 웹 접근성을 높히고 SEO(검색엔진 최적화)를 돕습니다.",
+		"reference": "https://www.w3schools.com/html/html5_semantic_elements.asp",
+		"check": true
+	},
+	{
+		"id": 3,
+		"question": "<meta>태그는 왜 사용하나요?",
+		"answer": "<meta>태그는 HTML 문서에 대한 메타 데이터(문서에 대한 정보)를 정의합니다. 일반적으로 문자 집합, 페이지 설명, 키워드, 문서 작성자 및 뷰포트 설정을 지정하는 데 사용되며 SEO(검색엔진 최적화)에 도움을 줍니다.",
+		"reference": "https://www.w3schools.com/tags/tag_meta.asp",
+		"check": true
+	},
+	{
+		"id": 4,
+		"question": "웹 워커(Web Worker)란 무엇인가요?",
+		"answer": "웹 워커는 페이지 성능을 방해하지 않고 백그라운드 쓰레드에서 실행되는 JavaScript 코드입니다. 데이터베이스에 접근이나 네트워킹과 같은 작업이 오래걸리는 스크립트를 백그라운드에서 처리할 수 있습니다.",
+		"reference": "https://developer.mozilla.org/ko/docs/Web/API/Web_Workers_API/basic_usage",
+		"check": true
+	},
+	{
+		"id": 5,
+		"question": "호환 모드(Quirks Mode)란 무엇인가요?",
+		"answer": "HTML 페이지 또는 문서에 <! DOCTYPE> 요소를 포함하지 않으면 호환(quirks)모드로 이동합니다. 이 모드에서 HTML 요소는 브라우저에 따라 다르게 표현됩니다.",
+		"reference": "https://developer.mozilla.org/ko/docs/Web/HTML/Quirks_Mode_and_Standards_Mode",
+		"check": true
+	},
+	{
+		"id": 6,
+		"question": "웹 스토리지(Web Storage)는 무엇이며 그 종류를 말해주세요.",
+		"answer": "HTML5부터 제공하는 기능으로 해당 도메인과 관련된 특정데이터를 서버가 아니라 클라이언트 웹 브라우저에 저장할 수 있도록 하는 기능입니다. 비슷한 기능으로 웹 쿠키가 있습니다만, 쿠키의 여러 단점(4KB 데이터 저장 제한, 암호화 되지 않은 상태 등)을 보완할 수 있습니다. 웹 스토리지는 LocalStorage와 SessionStorage 두 종류가 있으며, LocalStorage는 브라우저를 닫거나 다른 페이지로 이동해도 데이터가 계속 유지되는 반면, SessionStorage는 브라우저를 닫게 되면 삭제됩니다.",
+		"reference": "https://developer.mozilla.org/ko/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API",
+		"check": true
+	},
+	{
+		"id": 7,
+		"question": "폼(Form)은 무엇인가요?",
+		"answer": "폼(Form)은 사용자 정보가 채워질 때 수집하기 위해 사용되며, 보통 데이터베이스에 저장할 목적으로 사용됩니다.",
+		"reference": "https://www.upgrad.com/blog/html-interview-questions-answers/",
+		"check": true
+	}
+]

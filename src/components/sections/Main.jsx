@@ -1,23 +1,27 @@
 import React from 'react';
 import MainStyle from './Main.module.css';
 
-function Main() {
+function Main({ id, question, answer, reference }) {
 	return (
-		<div className={MainStyle.main}>
+		<main className={MainStyle.main}>
 			<div className={MainStyle.innerMain}>
-				<div className={MainStyle.question}>
-					<div className={MainStyle.questionText}>
-						<p>Lorem ipsum dolor sit, </p>
-					</div>
-				</div>
-				<div className={MainStyle.answer}>
-					<div className={MainStyle.answerText}>
-						<p>Lorem ipsum dolor sit, </p>
-					</div>
-				</div>
-				<div className={MainStyle.utils}>유틸창</div>
+				<section className={MainStyle.question}>
+					<article className={MainStyle.questionID}>{id}</article>
+					<article className={MainStyle.questionText}>
+						<p>{question}</p>
+					</article>
+				</section>
+				<section className={MainStyle.answer}>
+					<article className={MainStyle.answerText}>
+						<p>{answer}</p>
+					</article>
+					<article className={MainStyle.reference}>
+						<p>{reference}</p>
+					</article>
+				</section>
+				<section className={MainStyle.utils}>유틸창</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

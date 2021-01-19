@@ -5,7 +5,7 @@ import Mail from '../../assets/images/mail.png';
 
 function Footer() {
 	return (
-		<div className={FooterStyle.footer}>
+		<footer className={FooterStyle.footer}>
 			<div className={FooterStyle.innerFooter}>
 				<span className={FooterStyle.copyright}>ⓒ 2021 hyunwoome</span>
 				<div className={FooterStyle.linkLogo}>
@@ -17,7 +17,7 @@ function Footer() {
 					</a>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }
 

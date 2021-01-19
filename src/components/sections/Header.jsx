@@ -6,12 +6,12 @@ import HeaderStyle from './Header.module.css';
 function Header() {
 	return (
 		<>
-			<div className={HeaderStyle.header}>
+			<header className={HeaderStyle.header}>
 				<div className={HeaderStyle.innerHeader}>
 					<Logo />
 					<Menu />
 				</div>
-			</div>
+			</header>
 		</>
 	);
 }

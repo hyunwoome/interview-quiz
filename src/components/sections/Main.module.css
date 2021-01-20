@@ -18,9 +18,19 @@
 	margin-bottom: 1rem;
 	border-radius: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	font-size: 2rem;
+}
+
+.button {
+	border: none;
+	background-color: white;
+}
+
+.back,
+.next {
+	width: 20px;
 }
 
 .answerText {

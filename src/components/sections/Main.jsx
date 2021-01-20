@@ -1,20 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MainStyle from './Main.module.css';
+import Back from '../../assets/images/back.png';
+import Next from '../../assets/images/next.png';
 
 function Main({ quiz }) {
-	const { id, question, answer, reference } = quiz;
+	const { id, question, answer, reference, check } = quiz;
 	return (
 		<main className={MainStyle.main}>
 			<div className={MainStyle.innerMain}>
 				<section className={MainStyle.question}>
-					<article className={MainStyle.questionCount}>123</article>
 					<article className={MainStyle.questionText}>
-						<p>
-							<span>Q</span>
-							<span>
-								{id}. {question}
-							</span>
-						</p>
+						<button className={MainStyle.button}>
+							<img className={MainStyle.back} src={Back} alt="back button" />
+						</button>
+						<span>
+							Q{id}. {question}
+						</span>
+						<button className={MainStyle.button}>
+							<img className={MainStyle.next} src={Next} alt="back button" />
+						</button>
 					</article>
 				</section>
 				<section className={MainStyle.answer}>
@@ -28,10 +33,17 @@ function Main({ quiz }) {
 						</article>
 					</article>
 				</section>
-				<section className={MainStyle.utils}>유틸창</section>
 			</div>
 		</main>
 	);
 }
+
+Main.propTypes = {
+	id: PropTypes.number,
+	question: PropTypes.string,
+	answer: PropTypes.string,
+	reference: PropTypes.string,
+	check: PropTypes.bool,
+};
 
 export default Main;

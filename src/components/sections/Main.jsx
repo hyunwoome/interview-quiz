@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import MainStyle from './Main.module.css';
 import Back from '../../assets/images/back.png';
 import Next from '../../assets/images/next.png';
 
-function Main({ quiz }) {
+function Main({ quiz, onChildClick }) {
 	const { id, question, answer, reference, check } = quiz;
+	const [number, setNumber] = useState(0);
+	function handleClick() {
+		setNumber(number + 1);
+		onChildClick(number);
+	}
 	return (
 		<main className={MainStyle.main}>
 			<div className={MainStyle.innerMain}>
@@ -17,14 +22,13 @@ function Main({ quiz }) {
 						<span>
 							Q{id}. {question}
 						</span>
-						<button className={MainStyle.button}>
+						<button className={MainStyle.button} onClick={handleClick}>
 							<img className={MainStyle.next} src={Next} alt="back button" />
 						</button>
 					</article>
 				</section>
 				<section className={MainStyle.answer}>
 					<article className={MainStyle.answerText}>
-						<p>A.</p>
 						<p>{answer}</p>
 						<article className={MainStyle.reference}>
 							<p>

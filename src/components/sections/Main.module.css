@@ -28,9 +28,13 @@
 	background-color: white;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 .back,
 .next {
-	width: 20px;
+	width: 1.5rem;
 }
 
 .answerText {
@@ -44,7 +48,47 @@
 	align-items: left;
 	font-size: 1.3rem;
 	padding: 1rem;
-	line-height: 2rem;
+}
+
+.reference p {
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+	.questionText {
+		font-size: 1.5rem;
+	}
+	.back,
+	.next {
+		width: 1rem;
+	}
+	.answerText {
+		font-size: 1rem;
+	}
+	.reference p {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.questionText {
+		font-size: 1.2rem;
+	}
+	.answerText {
+		font-size: 0.8rem;
+	}
+	.reference p {
+		font-size: 0.5rem;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	.answerText {
+		font-size: 1rem;
+	}
+	.reference {
+		font-size: 0.9rem;
+	}
 }
 
 .reference {

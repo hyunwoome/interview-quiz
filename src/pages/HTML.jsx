@@ -6,18 +6,26 @@ import data from '../data/HTML.json';
 
 function HTML() {
 	const [number, setNumber] = useState(0);
-	function handleChildClick(number) {
-		setNumber(number);
-	}
-	for (let i = 0; i < data.length; i++) {
-		return (
-			<>
-				<Header />
-				<Main quiz={data[number]} onChildClick={handleChildClick} />
-				<Footer />
-			</>
-		);
-	}
+
+	const increaseChildClick = (number) => {
+		setNumber((number += 1));
+	};
+
+	const decreaseChildClick = (number) => {
+		setNumber((number -= 1));
+	};
+
+	return (
+		<>
+			<Header />
+			<Main
+				quiz={data[number]}
+				onIncreaseChildClick={increaseChildClick}
+				onDecreaseChildClick={decreaseChildClick}
+			/>
+			<Footer />
+		</>
+	);
 }
 
 export default HTML;

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hyunwoome/interview-quiz/static/css/main.c24937bf.chunk.css",
+    "main.js": "/hyunwoome/interview-quiz/static/js/main.e8d2e452.chunk.js",
+    "main.js.map": "/hyunwoome/interview-quiz/static/js/main.e8d2e452.chunk.js.map",
+    "runtime-main.js": "/hyunwoome/interview-quiz/static/js/runtime-main.12cb9de0.js",
+    "runtime-main.js.map": "/hyunwoome/interview-quiz/static/js/runtime-main.12cb9de0.js.map",
+    "static/js/2.09a32a68.chunk.js": "/hyunwoome/interview-quiz/static/js/2.09a32a68.chunk.js",
+    "static/js/2.09a32a68.chunk.js.map": "/hyunwoome/interview-quiz/static/js/2.09a32a68.chunk.js.map",
+    "index.html": "/hyunwoome/interview-quiz/index.html",
+    "static/css/main.c24937bf.chunk.css.map": "/hyunwoome/interview-quiz/static/css/main.c24937bf.chunk.css.map",
+    "static/js/2.09a32a68.chunk.js.LICENSE.txt": "/hyunwoome/interview-quiz/static/js/2.09a32a68.chunk.js.LICENSE.txt",
+    "static/media/github.f1102180.png": "/hyunwoome/interview-quiz/static/media/github.f1102180.png",
+    "static/media/logo.a35f1153.png": "/hyunwoome/interview-quiz/static/media/logo.a35f1153.png",
+    "static/media/mail.2c378c9e.png": "/hyunwoome/interview-quiz/static/media/mail.2c378c9e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12cb9de0.js",
+    "static/js/2.09a32a68.chunk.js",
+    "static/css/main.c24937bf.chunk.css",
+    "static/js/main.e8d2e452.chunk.js"
+  ]
+}

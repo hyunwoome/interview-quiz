@@ -29,12 +29,20 @@ function Menu() {
 						</button>
 					</li>
 					<li className={MenuStyle.listItem}>
-						<button className={MenuStyle.button} onClick={transferText}>
+						<button
+							className={MenuStyle.button}
+							onClick={transferText}
+							disabled
+						>
 							CSS
 						</button>
 					</li>
 					<li className={MenuStyle.listItem}>
-						<button className={MenuStyle.button} onClick={transferText}>
+						<button
+							className={MenuStyle.button}
+							onClick={transferText}
+							disabled
+						>
 							JavaScript
 						</button>
 					</li>

@@ -6,8 +6,8 @@
 
 - [데모 링크]()
 - 사용된 언어 및 프레임 워크: HTML, CSS, React
-- 서버 배포:
+- 서버 배포: Github Pages
 
 ## Feature
 
-Soon
+## Installation

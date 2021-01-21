@@ -32,6 +32,11 @@
 	cursor: pointer;
 }
 
+.disabledButton {
+	border: none;
+	background-color: white;
+}
+
 .back,
 .next {
 	width: 1.5rem;

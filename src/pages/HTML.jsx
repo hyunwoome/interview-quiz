@@ -6,7 +6,7 @@ import data from '../data/HTML.json';
 
 function HTML() {
 	const [number, setNumber] = useState(0);
-
+	const dataLength = data.length - 2;
 	const increaseChildClick = (number) => {
 		setNumber((number += 1));
 	};
@@ -20,6 +20,7 @@ function HTML() {
 			<Header />
 			<Main
 				quiz={data[number]}
+				length={dataLength}
 				onIncreaseChildClick={increaseChildClick}
 				onDecreaseChildClick={decreaseChildClick}
 			/>
